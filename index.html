@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        
+
+<section id="hero" class="hero">
+    <div class="hero-content">
+        <h1>Tukue Gebremariam Gebregergis, MSc</h1>
+        <p>Senior Cloud Engineer & System Developer</p>
+        <p>Surtsögatan, Stockholm</p>
+        <p>tukue.geb@gmail.com | +46 725838209</p>
+        <a href="#contact" class="cta-button">Get in Touch</a>
+    </div>
+</section>
+
+<section id="resume" class="resume">
+    <h2>Resume</h2>
+    <div class="resume-grid">
+        <div class="resume-section">
+            <h3>Certifications</h3>
+            <ul class="certification-list">
+                <li>System verification - ISTQB Certified Tester Foundation</li>
+                <li>Certified AWS Solution Architect Associate</li>
+                <li>Microsoft Certified Azure Fundamentals</li>
+                <li>Terraform Certified Associate</li>
+                <li>AWS Developer Associate</li>
+                <li>Certified Scrum Product Owner</li>
+                <li>AWS Certified AI Practitioner</li>
+            </ul>
+        </div>
+        
+        <div class="resume-section">
+            <h3>Technical Skills</h3>
+            <div class="skills-categories">
+                <div class="skill-category">
+                    <h4>Programming</h4>
+                    <ul class="skills-list">
+                        <li>C</li>
+                        <li>C++</li>
+                        <li>Java</li>
+                        <li>Python</li>
+                        <li>JavaScript</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h4>Backend Technologies</h4>
+                    <ul class="skills-list">
+                        <li>Spring Framework</li>
+                        <li>Spring Boot</li>
+                        <li>Node.js</li>
+                        <li>Flask</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h4>Frontend Technologies</h4>
+                    <ul class="skills-list">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>React</li>
+                        <li>Bootstrap</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="resume-section">
+            <h3>Work Experience</h3>
+            <div class="resume-item">
+                <h4>Senior Cloud Engineer</h4>
+                <p>Enigio</p>
+                <p>May 2024 – Oct 2024</p>
+                <p>Implemented event-driven applications using AWS CloudFormation, Lambda functions, and integrated various AWS cloud services. Focused on security scanning using Security Hub.</p>
+            </div>
+            <div class="resume-item">
+                <h4>DevOps Engineer / SRE</h4>
+                <p>Digital Route</p>
+                <p>Jun 2023 – Oct 2023</p>
+                <p>Infrastructure as code using Terraform, AWS services development, Kubernetes, operational automation, and AWS security implementations.</p>
+            </div>
+            <div class="resume-item">
+                <h4>Cloud Developer/DevOps Engineer Consultant</h4>
+                <p>Trafikförvaltningen</p>
+                <p>Jan 2022 – May 2023</p>
+                <p>Cloud migration, infrastructure automation, AWS serverless development, and CI/CD implementation using Azure DevOps.</p>
+            </div>
+            <!-- Add more work experience items as needed -->
+        </div>
+    </div>
+</section>
+
+<section id="projects" class="projects">
+    <h2>Projects</h2>
+    <div class="project-grid">
+        <article class="project-card">
+            <div class="project-image">
+                <img src="aws-cloud.jpg" alt="AWS Cloud Architecture">
+            </div>
+            <div class="project-content">
+                <h3>AWS Event-Driven Application</h3>
+                <p class="project-tech">AWS CloudFormation | Lambda | Security Hub</p>
+                <p class="project-description">
+                    Implemented automated ECS container restart system triggered by security patching events. 
+                    Developed event-driven architecture using AWS services and infrastructure as code.
+                </p>
+                <div class="project-links">
+                    <a href="#" class="project-link">View Details</a>
+                </div>
+            </div>
+        </article>
+
+        <article class="project-card">
+            <div class="project-image">
+                <img src="devops.jpg" alt="DevOps Pipeline">
+            </div>
+            <div class="project-content">
+                <h3>Cloud Infrastructure Automation</h3>
+                <p class="project-tech">Terraform | AWS | Kubernetes</p>
+                <p class="project-description">
+                    Developed infrastructure as code solutions using Terraform, implementing AWS services 
+                    and Kubernetes orchestration with security best practices.
+                </p>
+                <div class="project-links">
+                    <a href="#" class="project-link">View Details</a>
+                </div>
+            </div>
+        </article>
+
+        <article class="project-card">
+            <div class="project-image">
+                <img src="serverless.jpg" alt="Serverless Architecture">
+            </div>
+            <div class="project-content">
+                <h3>Serverless API Development</h3>
+                <p class="project-tech">AWS Lambda | API Gateway | DynamoDB</p>
+                <p class="project-description">
+                    Built serverless applications using AWS Lambda and API Gateway, implementing 
+                    efficient data storage solutions with DynamoDB.
+                </p>
+                <div class="project-links">
+                    <a href="#" class="project-link">View Details</a>
+                </div>
+            </div>
+        </article>
+
+        <article class="project-card">
+            <div class="project-image">
+                <img src="monitoring.jpg" alt="Monitoring Dashboard">
+            </div>
+            <div class="project-content">
+                <h3>Cloud Monitoring Solution</h3>
+                <p class="project-tech">Grafana | Prometheus | ELK Stack</p>
+                <p class="project-description">
+                    Implemented comprehensive monitoring solutions using Grafana, Prometheus, 
+                    and the ELK Stack for cloud infrastructure visibility.
+                </p>
+                <div class="project-links">
+                    <a href="#" class="project-link">View Details</a>
+                </div>
+            </div>
+        </article>
+        <article class="project-card">
+            <div class="project-image">
+                <img src="react-amplify.jpg" alt="React AWS Amplify Application">
+            </div>
+            <div class="project-content">
+                <h3>Fullstack React AWS Amplify Application</h3>
+                <p class="project-tech">React | AWS Amplify | GraphQL | Cognito | DynamoDB</p>
+                <p class="project-description">
+                    Developed a modern fullstack web application using React and AWS cloud services through Amplify. 
+                    Key features include:
+                    <ul>
+                        <li>Secure user authentication and authorization using Amazon Cognito</li>
+                        <li>Real-time data synchronization with GraphQL API and AppSync</li>
+                        <li>Serverless backend with DynamoDB for data persistence</li>
+                        <li>Responsive UI with AWS Amplify UI components</li>
+                        <li>Automated CI/CD pipeline for continuous deployment</li>
+                    </ul>
+                </p>
+                <div class="project-links">
+                    <a href="#" class="project-link">View Details</a>
+                    <!-- Add GitHub link if you want to share the code -->
+                    <a href="#" class="project-link">GitHub</a>
+                </div>
+            </div>
+        </article>
+        
+            <div class="project-image">
+                <img src="microservices-platform.jpg" alt="Enterprise Microservices Platform">
+            </div>
+            <div class="project-content">
+                <h3>Enterprise Microservices Platform</h3>
+                <p class="project-tech">Spring Boot | Kubernetes | RabbitMQ | Docker | AWS | Prometheus | Grafana</p>
+                <p class="project-description">
+                    Designed and implemented a comprehensive enterprise-grade microservices platform.
+                    Key features include:
+                    <ul>
+                        <li>Scalable microservices architecture using Spring Boot and Spring Cloud</li>
+                        <li>Service orchestration and container management with Kubernetes</li>
+                        <li>Message-driven architecture using RabbitMQ for service integration</li>
+                        <li>API Gateway implementation with Spring Cloud Gateway</li>
+                        <li>Automated CI/CD pipeline with GitHub Actions and AWS</li>
+                        <li>Infrastructure as Code using Terraform</li>
+                        <li>Comprehensive monitoring and alerting with Prometheus and Grafana</li>
+                        <li>Distributed tracing and centralized logging with ELK Stack</li>
+                    </ul>
+                </p>
+                <div class="project-links">
+                    <a href="#" class="project-link">View Details</a>
+                    <a href="#" class="project-link">GitHub</a>
+                </div>
+            </div>
+        </article>
+        
+    </div>
+</section>
+
+        <section id="about" class="about">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <img src="profile.jpg" alt="Tukue Gebremariam Gebregergis" class="profile-image">
+                <div class="about-text">
+                    <p>I am an experienced system developer and system engineer with extensive background in cloud computing and IP networking. With a proven track record at companies like Ericsson AB, Discovery Network Sweden, and Telenor, I specialize in developing robust cloud solutions and implementing DevOps practices.</p>
+                    <p>My expertise spans across AWS cloud services, Java development, and system architecture design. I am passionate about solving real-world problems through cloud computing and continuously expanding my knowledge in emerging technologies.</p>
+                    <div class="languages">
+                        <h4>Languages</h4>
+                        <ul>
+                            <li>English - Professional</li>
+                            <li>Swedish - Basic conversational level</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+
+        <section id="contact" class="contact">
+            <h2>Contact Me</h2>
+            <div class="contact-content">
+                <form class="contact-form">
+                    <input type="text" placeholder="Name" required>
+                    <input type="email" placeholder="Email" required>
+                    <textarea placeholder="Message" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 My Portfolio. All rights reserved.</p>
+    </footer>
+</body>
+</html>
