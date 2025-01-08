@@ -37,20 +37,20 @@ nav ul li a {
     font-weight: bold;
 }
 
-/* Hero Section */
-.hero {
+/* home Section */
+.home {
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('hero-bg.jpg');
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('home-bg.jpg');
     background-size: cover;
     background-position: center;
     color: white;
     text-align: center;
 }
 
-.hero-content h1 {
+.home-content h1 {
     font-size: 3rem;
     margin-bottom: 1rem;
 }
@@ -166,7 +166,7 @@ nav ul li a {
 
 .resume-item p {
     margin-bottom: 0.5rem;
-    color: #666;
+    color: #888;
 }
 
 .resume-item p:first-of-type {
@@ -223,32 +223,32 @@ nav ul li a {
 
 .languages li {
     margin-bottom: 0.5rem;
-    color: #666;
+    color: #888;
 }
 
-/* Hero Section Enhancement */
-.hero {
+/* home Section Enhancement */
+.home {
     position: relative;
-    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('hero-bg.jpg');
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('home-bg.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
 }
 
-.hero-content {
+.home-content {
     max-width: 800px;
     text-align: center;
     padding: 2rem;
 }
 
-.hero-content h1 {
+.home-content h1 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
     color: #fff;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
 }
 
-.hero-content p {
+.home-content p {
     font-size: 1.2rem;
     margin-bottom: 0.5rem;
     color: #fff;
@@ -270,7 +270,7 @@ nav ul li a {
         margin: 0 auto 2rem;
     }
 
-    .hero-content h1 {
+    .home-content h1 {
         font-size: 2rem;
     }
 
@@ -375,11 +375,12 @@ nav ul li a {
 
 .project-content h3 {
     color: #2c3e50;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
 }
 
 .project-content p {
-    color: #666;
+    color: #888;
+    margin-top: 0;
     margin-bottom: 1.5rem;
 }
 
@@ -484,7 +485,7 @@ nav ul li a {
 
 .education-location,
 .education-period {
-    color: #666;
+    color: #888;
     font-size: 0.9rem;
 }
 
@@ -512,4 +513,3 @@ nav ul li a {
         padding: 40px 0;
     }
 }
-
