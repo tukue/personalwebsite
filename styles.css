@@ -286,6 +286,26 @@ nav ul li a {
 /* Contact Section Enhancement */
 .contact {
     background: #fff;
+    padding: 5rem 2rem;
+    scroll-margin-top: 5rem;
+}
+
+.contact h2 {
+    color: #2c3e50;
+    margin-bottom: 0.75rem;
+    text-align: center;
+}
+
+.contact-content {
+    max-width: 680px;
+    margin: 0 auto;
+}
+
+.contact-intro,
+.contact-fallback {
+    color: #555;
+    margin: 0 auto 1.5rem;
+    text-align: center;
 }
 
 .contact-form {
@@ -293,28 +313,85 @@ nav ul li a {
     padding: 2rem;
     border-radius: 10px;
     box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+    display: grid;
+    gap: 0.65rem;
 }
 
 .contact-form input,
 .contact-form textarea {
     background: #fff;
     border: 1px solid #dee2e6;
+    border-radius: 5px;
+    font: inherit;
+    margin-bottom: 0.5rem;
+    padding: 0.8rem 1rem;
     transition: border-color 0.3s;
+    width: 100%;
 }
 
 .contact-form input:focus,
 .contact-form textarea:focus {
     border-color: #007bff;
-    outline: none;
+    outline: 3px solid rgba(0, 123, 255, 0.18);
+}
+
+.contact-form label {
+    color: #2c3e50;
+    font-weight: 600;
+}
+
+.contact-form textarea {
+    min-height: 150px;
+    resize: vertical;
 }
 
 .contact-form button {
     background: #007bff;
+    border: 0;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    font: inherit;
+    font-weight: 600;
+    justify-self: start;
+    padding: 0.85rem 1.25rem;
     transition: background-color 0.3s;
 }
 
 .contact-form button:hover {
     background: #0056b3;
+}
+
+.contact-form button:focus-visible,
+.contact-fallback a:focus-visible,
+.cta-button:focus-visible {
+    outline: 3px solid #0056b3;
+    outline-offset: 3px;
+}
+
+.contact-status {
+    color: #555;
+    font-size: 0.9rem;
+    margin-top: 0.35rem;
+}
+
+.contact-fallback {
+    margin-top: 1rem;
+}
+
+.contact-fallback a {
+    color: #0056b3;
+    font-weight: 600;
+}
+
+@media (max-width: 600px) {
+    .contact {
+        padding: 4rem 1rem;
+    }
+
+    .contact-form {
+        padding: 1.25rem;
+    }
 }
 
 /* Additional Utility Classes */
