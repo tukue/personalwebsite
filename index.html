@@ -498,12 +498,23 @@
         <section id="contact" class="contact">
             <h2>Contact Me</h2>
             <div class="contact-content">
+                <p class="contact-intro">Have a project or opportunity in mind? Send me a message.</p>
                 <form class="contact-form">
-                    <input type="text" placeholder="Name" required>
-                    <input type="email" placeholder="Email" required>
-                    <textarea placeholder="Message" required></textarea>
+                    <label for="contact-name">Name</label>
+                    <input id="contact-name" name="name" type="text" autocomplete="name" placeholder="Your name" required>
+
+                    <label for="contact-email">Email</label>
+                    <input id="contact-email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required>
+
+                    <label for="contact-message">Message</label>
+                    <textarea id="contact-message" name="message" rows="6" placeholder="How can I help?" required></textarea>
+
                     <button type="submit">Send Message</button>
+                    <p class="contact-status" id="contact-status" role="status" aria-live="polite">
+                        This form opens your email app with the message ready to send.
+                    </p>
                 </form>
+                <p class="contact-fallback">Prefer email? <a href="mailto:tukue.geb@gmail.com">tukue.geb@gmail.com</a></p>
             </div>
         </section>
     </main>
@@ -511,5 +522,6 @@
     <footer>
         <p>&copy; 2025 My Portfolio. All rights reserved.</p>
     </footer>
+    <script src="contact.js" defer></script>
 </body>
 </html>
