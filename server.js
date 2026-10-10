@@ -4,9 +4,35 @@ const fs = require('fs');
 const path = require('path');
 
 const server = http.createServer((req, res) => {
-  let filePath = '.' + req.url;
-  if (filePath === './') {
-    filePath = './index.html';
+  let requestedPath;
+  try {
+    requestedPath = decodeURIComponent(req.url.split('?')[0]);
+  } catch {
+    res.writeHead(400);
+    res.end('Bad request');
+    return;
+  }
+  if (!requestedPath.startsWith('/') || requestedPath.includes('\\') ||
+      requestedPath.includes('\0') || requestedPath.split('/').some(part => part === '..' || part.startsWith('.'))) {
+    res.writeHead(403);
+    res.end('Forbidden');
+    return;
+  }
+  const root = fs.realpathSync(__dirname);
+  const filePath = path.resolve(root, '.' + (requestedPath === '/' ? '/index.html' : requestedPath));
+  let realPath;
+  try {
+    realPath = fs.realpathSync(filePath);
+  } catch {
+    res.writeHead(404);
+    res.end('File not found');
+    return;
+  }
+  const relativePath = path.relative(root, realPath);
+  if (relativePath === '..' || relativePath.startsWith('..' + path.sep) || path.isAbsolute(relativePath)) {
+    res.writeHead(403);
+    res.end('Forbidden');
+    return;
   }
 
   const extname = String(path.extname(filePath)).toLowerCase();
@@ -22,7 +48,7 @@ const server = http.createServer((req, res) => {
 
   const contentType = mimeTypes[extname] || 'application/octet-stream';
 
-  fs.readFile(filePath, (error, content) => {
+  fs.readFile(realPath, (error, content) => {
     if (error) {
       if (error.code === 'ENOENT') {
         res.writeHead(404);
